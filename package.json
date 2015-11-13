@@ -1,0 +1,30 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "portfolio application used to display work",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wad3inthewater/portfolio_app.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Wade Fuller III @wad3inthewater",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/wad3inthewater/portfolio_app/issues"
+  },
+  "homepage": "https://github.com/wad3inthewater/portfolio_app#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.12.0",
+    "gulp-sass": "^2.1.0"
+  }
+}

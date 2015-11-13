@@ -1,0 +1,15 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: portfolio_dev
+  pool: 5
+  username: portfolio2
+  password: woot
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: portfolio_test
+  pool: 5
+  username: portfolio2
+  password: woot

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Portfolio2</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<style type="text/css" media="screen">
+  .myclass{
+    border: 1px #000 solid;
+    height: 20px;
+  }
+</style>
+<div class="row">
+  <div class="myclass col-md-3"></div>
+</div>
+
+<%= yield %>
+
+</body>
+</html>
