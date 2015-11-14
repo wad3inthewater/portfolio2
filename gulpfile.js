@@ -1,4 +1,4 @@
-var gulp = require('gulp'),
+  var gulp = require('gulp'),
     sass = require('gulp-sass'),
     jshint = require('gulp-jshint');
 
@@ -10,7 +10,7 @@ gulp.task('jshint', function() {
 });
 
 gulp.task('sass', function(){
-  gulp.src('./public/sass/*.scss')
+  gulp.src('./public/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./public/css'));
 });
