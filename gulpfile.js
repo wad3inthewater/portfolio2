@@ -1,6 +1,7 @@
-  var gulp = require('gulp'),
-    sass = require('gulp-sass'),
-    jshint = require('gulp-jshint');
+  var gulp     = require('gulp'),
+      sass     = require('gulp-sass'),
+      jshint   = require('gulp-jshint'),
+      scsslint = require('gulp-scss-lint');
 
 
 gulp.task('jshint', function() {
@@ -13,6 +14,11 @@ gulp.task('sass', function(){
   gulp.src('./public/sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('./public/css'));
+});
+
+gulp.task('scss-lint', function() {
+  return gulp.src('.public/sass/**/*.scss')
+    .pipe(scsslint());
 });
 
 // gulp.task('sass:watch', function () {

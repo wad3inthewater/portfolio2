@@ -1,0 +1,17 @@
+.header {
+  height: 100px;
+
+}
+.main-nav {
+  .mn-item {
+    border: 1px solid $black;
+    padding: 5px 16px;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  .mn-link {
+    text-decoration: none;
+  }
+}

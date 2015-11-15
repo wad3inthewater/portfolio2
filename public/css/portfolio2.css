@@ -1,6 +1,41 @@
+/* Basic Colors */
+.logo {
+  width: 220px;
+  height: 68px;
+  border: 3px solid #000000;
+  background-color: #cccccc; }
+
+.container {
+  margin-right: auto;
+  margin-left: auto; }
+
+.list-horizontal .list-item {
+  display: inline-block; }
+
+.text-center {
+  text-align: center; }
+
 h1 {
   font-size: 25px;
   color: #ff0000; }
+
+.header {
+  height: 100px; }
+
+.main-nav .mn-item {
+  border: 1px solid #000000;
+  padding: 5px 16px;
+  margin-right: 20px; }
+  .main-nav .mn-item:last-child {
+    margin-right: 0; }
+
+.main-nav .mn-link {
+  text-decoration: none; }
+
+.project-grid .pg-link {
+  height: 240px;
+  display: block;
+  border: 2px solid #000000; }
 
 .footer {
   height: 30px; }
