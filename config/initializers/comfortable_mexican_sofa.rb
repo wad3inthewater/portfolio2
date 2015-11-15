@@ -71,7 +71,7 @@ ComfortableMexicanSofa.configure do |config|
   # By default you cannot have irb code inside your layouts/pages/snippets.
   # Generally this is to prevent putting something like this:
   # <% User.delete_all %> but if you really want to allow it...
-  #   config.allow_irb = false
+  config.allow_irb = true
 
   # Whitelist of all helper methods that can be used via {{cms:helper}} tag. By default
   # all helpers are allowed except `eval`, `send`, `call` and few others. Empty array

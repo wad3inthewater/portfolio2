@@ -5,6 +5,14 @@
   border: 3px solid #000000;
   background-color: #cccccc; }
 
+.portfolio-site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+.main-content {
+  flex: 1; }
+
 .container {
   margin-right: auto;
   margin-left: auto; }
@@ -14,6 +22,12 @@
 
 .text-center {
   text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
 
 h1 {
   font-size: 25px;
@@ -32,10 +46,22 @@ h1 {
 .main-nav .mn-link {
   text-decoration: none; }
 
+.project-grid .pg-item {
+  margin-bottom: 40px; }
+
 .project-grid .pg-link {
   height: 240px;
   display: block;
   border: 2px solid #000000; }
 
+.project-highlight {
+  height: 452px;
+  background-color: #cccccc;
+  margin: 30px 0; }
+
 .footer {
-  height: 30px; }
+  height: 30px;
+  color: #ffffff;
+  background-color: #000000; }
+  .footer .f-content {
+    width: 100%; }

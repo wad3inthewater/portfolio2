@@ -1,3 +1,11 @@
+.portfolio-site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main-content {
+  flex: 1;
+}
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -9,6 +17,14 @@
   }
 }
 
-.text-center {
-  text-align: center;
+.text {
+  &-center{
+    text-align: center;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-left {
+    text-align: left;
+  }
 }
