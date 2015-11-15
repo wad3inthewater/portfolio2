@@ -8,6 +8,10 @@ Bundler.require(*Rails.groups)
 
 module Portfolio2
   class Application < Rails::Application
+    config.autoload_paths += [
+      "#{Rails.root}/app/controllers/comfy/admin/cms"
+    ]
+    config.paths["config/routes.rb"] << File.join(Rails.root, "config/routes/cms_routes.rb")
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
