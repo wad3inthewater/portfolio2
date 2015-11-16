@@ -1,32 +1,26 @@
 <div class="import-export">
   <h2>Import/Export</h2>
   <div class="import-buttons js-toggle-action">
-     <% current_env = ENV['CONFIG_ENV'] || Rails.env %>
-    <% if current_env.downcase != "qa"%>
-    <button class="button js-deploy-comfy" data-env='<%= Web2::WEB_CONFIG[:default_host] =%>' style="margin-bottom: 16px">pull from QA</button><br>
-    <% else %>
-    <button id="qa-prod" class="button deploy-qa js-deploy-comfy" data-env="animoto.com">Push to Prod</button>
-    <% end %>
+
+    <button class="button js-comfy-import" style="margin-bottom: 16px">comfy import</button><br>
+    <!-- <button id="qa-prod" class="button deploy-qa js-deploy-comfy" data-env="animoto.com">Push to Prod</button> -->
+
   </div>
   <div class="loading-fixtures js-toggle-action" style="display: none">
   <p>Updating CMS...</p>
   </div>
 </div>
 <script>
-  $('.js-deploy-comfy').on('click', function(event) {
+  $('.js-comfy-import').on('click', function(event) {
     event.preventDefault();
-    var clicked = $(this),
-        target_env = clicked.data("env");
+    var clicked  = $(this),
+        base_url = "<%= request.base_url %>";
+        // target_env = clicked.data("env");
 
     $(".js-toggle-action").toggle();
 
     function importComplete() {
       $(".js-toggle-action").toggle();
-      if (target_env === "animoto.com") {
-        alert("export complete!")
-      } else{
-        alert("import complete!");
-      }
     }
 
     function importError() {
@@ -35,19 +29,12 @@
     }
 
     $.ajax({
-      url:'https://qa.animoto.com<%= comfy_export_zip_path %>',
-      dataType: "jsonp",
+      url  : base_url + '<%= comfy_import_path %>',
       error: importError
 
     }).done(function(data) {
-      $.ajax ({
-        url: 'https://' + target_env + '<%= comfy_trigger_import_path %>',
-        dataType: "jsonp",
-        data: {'file_name': data.file_name},
-        type: "GET",
-        success: importComplete,
-        error: importError
-       });
+      alert('finished');
+      importComplete();
     });
   });
 </script>
