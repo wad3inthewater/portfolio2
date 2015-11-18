@@ -1,0 +1,30 @@
+.project-info {
+  height: 400px;
+  margin-top: 40px;
+  .pi-left {
+    position: relative;
+    border-top: 3px solid $black;
+  }
+  .pi-right {
+    border-top: 3px solid $black;
+  }
+  .pi-header {
+    position: relative;
+    margin: 16px 0;
+    width: 145px;
+    line-height: 30px;
+    border-bottom: 1px solid $black;
+  }
+  .pi-image-main {
+    height: 300px;
+    background-color: $red;
+  }
+  .pi-image-support-right {
+    height: 100px;
+    background-color: $black;
+  }
+  .pi-image-support-left {
+    height: 100px;
+    background-color: $grey;
+  }
+}
