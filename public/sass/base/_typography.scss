@@ -1,0 +1,26 @@
+h3 {
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 20px 0;
+}
+
+ul {
+  margin-bottom: 20px;
+}
+
+.underline {
+  position: relative;
+  width: 145px;
+  line-height: 30px;
+  &-bottom {
+    @extend .underline;
+    border-bottom: 1px solid $black;
+  }
+  &-top {
+    @extend .underline;
+    border-top: 1px solid $black;
+  }
+}
