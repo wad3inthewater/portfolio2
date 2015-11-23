@@ -1,0 +1,6 @@
+.link-fade-bg {
+  transition: color 0.55s, background-color 0.55s;
+  &:hover {
+    transition: color 0.65s, background-color 0.75s;
+  }
+}

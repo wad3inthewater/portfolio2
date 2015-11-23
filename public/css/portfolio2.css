@@ -70,6 +70,11 @@ ul {
   .underline-top {
     border-top: 1px solid #000000; }
 
+.link-fade-bg {
+  transition: color 0.55s, background-color 0.55s; }
+  .link-fade-bg:hover {
+    transition: color 0.65s, background-color 0.75s; }
+
 h1 {
   font-size: 25px;
   color: #ff0000; }
@@ -79,12 +84,13 @@ h1 {
 
 .main-nav .mn-item {
   border: 1px solid #000000;
-  padding: 5px 16px;
   margin-right: 20px; }
   .main-nav .mn-item:last-child {
     margin-right: 0; }
 
 .main-nav .mn-link {
+  padding: 5px 16px;
+  display: block;
   text-decoration: none; }
 
 .project-grid .pg-item {
@@ -96,6 +102,7 @@ h1 {
   border: 2px solid #000000; }
 
 .project-highlight {
+  position: relative;
   height: 452px;
   background-color: #cccccc;
   margin: 30px 0; }

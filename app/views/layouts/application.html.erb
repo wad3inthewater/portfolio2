@@ -7,9 +7,12 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= stylesheet_link_tag '/css/vendor/flexboxgrid.css' %>
+  <%= stylesheet_link_tag '/css/vendor/nivo-slider.css' %>
   <%= stylesheet_link_tag '/css/portfolio2' %>
 </head>
 <body class="portfolio-site">
 <%= yield %>
+<script type="text/javascript" src="/javascript/jquery.nivo.slider.js"></script>
+<%= javascript_include_tag comfy_cms_render_js_path(@cms_site.id, @cms_layout.identifier) %>
 </body>
 </html>
