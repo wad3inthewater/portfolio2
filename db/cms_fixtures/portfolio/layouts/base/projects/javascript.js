@@ -1,5 +1,3 @@
-$(window).load(function() {
-  $('#slider').nivoSlider({
-    effect : 'fade'
-  });
-});
+   $('#slider').nivoSlider({
+     effect : 'fade'
+   });
