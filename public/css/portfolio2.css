@@ -13,6 +13,9 @@
 .main-content {
   flex: 1; }
 
+.invisible {
+  visibility: hidden; }
+
 .container {
   margin-right: auto;
   margin-left: auto; }
@@ -106,6 +109,8 @@ h1 {
   height: 452px;
   background-color: #cccccc;
   margin: 30px 0; }
+  .project-highlight img {
+    width: 100%; }
 
 .project-info {
   height: 400px;

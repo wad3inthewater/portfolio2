@@ -1,3 +1,3 @@
-   $('#slider').nivoSlider({
-     effect : 'fade'
-   });
+$('#slider').removeClass('invisible').nivoSlider({
+  effect : 'fade'
+});
