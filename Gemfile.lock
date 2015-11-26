@@ -126,6 +126,7 @@ GEM
       mime-types
       mimemagic (= 0.3.0)
     pg (0.18.3)
+    picturefill (0.1.3)
     plupload-rails (1.2.1)
       rails (>= 3.1)
     rack (1.6.4)
@@ -215,6 +216,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   pg
+  picturefill
   rails (= 4.2.0)
   rails_12factor
   sass-rails (~> 5.0)
@@ -224,3 +226,6 @@ DEPENDENCIES
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
+
+BUNDLED WITH
+   1.10.6
