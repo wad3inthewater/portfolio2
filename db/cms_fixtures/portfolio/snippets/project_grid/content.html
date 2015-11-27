@@ -1,10 +1,36 @@
 <div class="container">
   <div class="project-grid">
     <ul class="row list-horizontal">
-      <li class="list-item pg-item col-sm-4 col-xs-12"><a href="" class="pg-link">proj 1</a></li>
-      <li class="list-item pg-item col-sm-4 col-xs-12"><a href="" class="pg-link">proj 2</a></li>
-      <li class="list-item pg-item col-sm-4 col-xs-12"><a href="" class="pg-link">proj 3</a></li>
-      <li class="list-item pg-item col-sm-4 col-xs-12"><a href="{{ cms:page:project_grid.image_2x_2:string }}" class="pg-link">proj 4</a></li>
+      <li class="list-item pg-item col-sm-4 col-xs-12">
+        <a href="" class="pg-link">
+          <picture>
+            <source srcset="{{ cms:page:project_grid.image_1_2x:string }}" media="(-webkit-min-device-pixel-ratio: 1.5)) ">
+            <source srcset="{{ cms:page:project_grid.image_1_2x:string }}" media="(min-resolution: 144dpi) ">
+            <img srcset="{{ cms:page:project_grid.image_1:string }}" alt="…">
+        </picture>
+        </a>
+      </li>
+      <li class="list-item pg-item col-sm-4 col-xs-12">
+        <a href="" class="pg-link">
+          <source srcset="{{ cms:page:project_grid.image_2_2x:string }}" media="(-webkit-min-device-pixel-ratio: 1.5)) ">
+          <source srcset="{{ cms:page:project_grid.image_2_2x:string }}" media="(min-resolution: 144dpi) ">
+          <img srcset="{{ cms:page:project_grid.image_2:string }}" alt="…">          
+        </a>
+      </li>
+      <li class="list-item pg-item col-sm-4 col-xs-12">
+        <a href="" class="pg-link">
+          <source srcset="{{ cms:page:project_grid.image_3_2x:string }}" media="(-webkit-min-device-pixel-ratio: 1.5)) ">
+          <source srcset="{{ cms:page:project_grid.image_3_2x:string }}" media="(min-resolution: 144dpi) ">
+          <img srcset="{{ cms:page:project_grid.image_3:string }}" alt="…">
+        </a>
+      </li>
+      <li class="list-item pg-item col-sm-4 col-xs-12">
+        <a href="" class="pg-link">
+          <source srcset="{{ cms:page:project_grid.image_4_2x:string }}" media="(-webkit-min-device-pixel-ratio: 1.5)) ">
+          <source srcset="{{ cms:page:project_grid.image_4_2x:string }}" media="(min-resolution: 144dpi) ">
+          <img srcset="{{ cms:page:project_grid.image_4:string }}" alt="…">          
+        </a>
+      </li>
     </ul>
   </div>
 </div>

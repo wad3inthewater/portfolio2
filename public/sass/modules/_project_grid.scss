@@ -4,8 +4,13 @@
     margin-bottom: 40px;
   }
   .pg-link {
-    height: 250px;
+    position: relative;
+    height: 100%;
     display: block;
     border: 2px solid $black;
+  }
+  img {
+    width: 100%;
+    height: auto;
   }
 }
