@@ -15,16 +15,24 @@
     line-height: 30px;
     border-bottom: 1px solid $black;
   }
-  .pi-image-main {
-    height: 300px;
-    background-color: $red;
+  .pi-images {
+    position: relative;
   }
-  .pi-image-support-right {
-    height: 100px;
-    background-color: $black;
+  .pi-image{
+    position: relative;
   }
-  .pi-image-support-left {
-    height: 100px;
-    background-color: $grey;
+  img {
+    position: relative;
+    width: 100%;
+    height: auto;
   }
+  // .pi-image-main {
+
+  // }
+  // .pi-image-support-right {
+
+  // }
+  // .pi-image-support-left {
+
+  // }
 }

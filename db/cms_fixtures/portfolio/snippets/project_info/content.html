@@ -1,21 +1,45 @@
 <section class="container">
   <div class="row project-info">
-    <div class="col-md-8">
-      <div class="pi-left">
-        <h2 class="pi-header">PROJECT TITLE</h2>      
-        some sample text to go here but it will be filled in my the cms obviously... lolz wtf is happening tho?   
+    <div class="row">
+      <div class="col-md-8">
+        <div class="pi-left">
+          <h2 class="pi-header">{{ cms:page:project_info.project_title:string }}</h2>
+          {{ cms:page:project_info.info_text:string }}
+        </div>
+      </div>
+      <div class="col-md-4 no-padding-right extra-padding-left">
+        <div class="pi-right">
+        <h2 class="pi-header">Categories</h2>
+          <ul>
+            <li>{{ cms:page:project_info.category_01:string }}</li>
+            <li>{{ cms:page:project_info.category_02:string }}</li>
+            <li>{{ cms:page:project_info.category_03:string }}</li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="col-md-4 no-padding-right extra-padding-left">
-      <div class="pi-right">
-      <h2 class="pi-header">CATEGORIES</h2>
-        stat 1
-        stat 2
-        stat 3
+    <div class="row pi-images">
+      <div class="pi-image pi-image-main col-sm-12">
+        <picture>
+          <source srcset="{{ cms:page:project_info.image_1_2x:string }}" media="(-webkit-min-device-pixel-ratio: 1.5)) ">
+          <source srcset="{{ cms:page:project_info.image_1_2x:string }}" media="(min-resolution: 144dpi) ">
+          <img srcset="{{ cms:page:project_info.image_1:string }}" alt="…">
+        </picture>
+      </div>
+      <div class="pi-image pi-image-support-left col-sm-12 col-md-6">
+        <picture>
+          <source srcset="{{ cms:page:project_info.image_2_2x:string }}" media="(-webkit-min-device-pixel-ratio: 1.5)) ">
+          <source srcset="{{ cms:page:project_info.image_2_2x:string }}" media="(min-resolution: 144dpi) ">
+          <img srcset="{{ cms:page:project_info.image_2:string }}" alt="…">
+        </picture>
+      </div>
+      <div class="pi-image pi-image-support-right col-sm-12 col-md-6">
+        <picture>
+          <source srcset="{{ cms:page:project_info.image_3_2x:string }}" media="(-webkit-min-device-pixel-ratio: 1.5)) ">
+          <source srcset="{{ cms:page:project_info.image_3_2x:string }}" media="(min-resolution: 144dpi) ">
+          <img srcset="{{ cms:page:project_info.image_3:string }}" alt="…">
+        </picture>
       </div>
     </div>
-    <div class="pi-image-main col-sm-12">pic</div>
-    <div class="pi-image-support-left col-sm-12 col-md-6">stuff</div>
-    <div class="pi-image-support-right col-sm-12 col-md-6">here</div>    
   </div>
 </section>

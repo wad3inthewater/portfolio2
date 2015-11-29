@@ -132,15 +132,14 @@ h1 {
     width: 145px;
     line-height: 30px;
     border-bottom: 1px solid #000000; }
-  .project-info .pi-image-main {
-    height: 300px;
-    background-color: #ff0000; }
-  .project-info .pi-image-support-right {
-    height: 100px;
-    background-color: #000000; }
-  .project-info .pi-image-support-left {
-    height: 100px;
-    background-color: #cccccc; }
+  .project-info .pi-images {
+    position: relative; }
+  .project-info .pi-image {
+    position: relative; }
+  .project-info img {
+    position: relative;
+    width: 100%;
+    height: auto; }
 
 .about-section .as-text {
   margin-top: 40px;
