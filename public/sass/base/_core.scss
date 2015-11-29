@@ -1,7 +1,14 @@
+.row {
+  margin: 0;
+}
 .portfolio-site {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+img {
+  width: 100%;
+  height: auto;
 }
 .main-content {
   flex: 1;
@@ -17,6 +24,9 @@
 .list-horizontal {
   .list-item {
     display: inline-block;
+    @media (max-width: 768px) {
+      display: block;
+    }
   }
 }
 
@@ -33,17 +43,36 @@
 }
 .extra-padding {
   padding: 40px;
-  &-left {
-    padding-left: $padding;
+  @media (min-width: 768px) {
+    &-left {
+      padding-left: $padding;
+    }
+    &-right {
+      padding-right: $padding;
+    }
+    &-bottom {
+      padding-bottom: $padding;
+    }
+    &-top {
+      padding-top: $padding;
+    }
   }
-  &-right {
-    padding-right: $padding;
-  }
-  &-bottom {
-    padding-bottom: $padding;
-  }
-  &-top {
-    padding-top: $padding;
+}
+.no-padding {
+  padding: 0;
+  @media (min-width: 768px) {
+    &-left {
+      padding-left: 0;
+    }
+    &-right {
+      padding-right: 0
+    }
+    &-bottom {
+      padding-bottom: 0;
+    }
+    &-top {
+      padding-top: 0;
+    }
   }
 }
 .no-margin {

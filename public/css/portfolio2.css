@@ -4,11 +4,21 @@
   height: 68px;
   border: 3px solid #000000;
   background-color: #cccccc; }
+  @media (max-width: 768px) {
+    .logo {
+      margin: 0 auto; } }
+
+.row {
+  margin: 0; }
 
 .portfolio-site {
   display: flex;
   flex-direction: column;
   min-height: 100vh; }
+
+img {
+  width: 100%;
+  height: auto; }
 
 .main-content {
   flex: 1; }
@@ -22,6 +32,9 @@
 
 .list-horizontal .list-item {
   display: inline-block; }
+  @media (max-width: 768px) {
+    .list-horizontal .list-item {
+      display: block; } }
 
 .text-center {
   text-align: center; }
@@ -34,14 +47,27 @@
 
 .extra-padding {
   padding: 40px; }
-  .extra-padding-left {
-    padding-left: 40px; }
-  .extra-padding-right {
-    padding-right: 40px; }
-  .extra-padding-bottom {
-    padding-bottom: 40px; }
-  .extra-padding-top {
-    padding-top: 40px; }
+  @media (min-width: 768px) {
+    .extra-padding-left {
+      padding-left: 40px; }
+    .extra-padding-right {
+      padding-right: 40px; }
+    .extra-padding-bottom {
+      padding-bottom: 40px; }
+    .extra-padding-top {
+      padding-top: 40px; } }
+
+.no-padding {
+  padding: 0; }
+  @media (min-width: 768px) {
+    .no-padding-left {
+      padding-left: 0; }
+    .no-padding-right {
+      padding-right: 0; }
+    .no-padding-bottom {
+      padding-bottom: 0; }
+    .no-padding-top {
+      padding-top: 0; } }
 
 .no-margin {
   margin: 0; }
@@ -73,6 +99,9 @@ ul {
   .underline-top {
     border-top: 1px solid #000000; }
 
+a:hover {
+  background-color: #fff; }
+
 .link-fade-bg {
   transition: color 0.55s, background-color 0.55s; }
   .link-fade-bg:hover {
@@ -84,17 +113,33 @@ h1 {
 
 .header {
   height: 100px; }
+  @media (max-width: 768px) {
+    .header {
+      height: 100%; } }
+
+@media (max-width: 480px) {
+  .main-nav {
+    padding: 0; } }
 
 .main-nav .mn-item {
   border: 1px solid #000000;
   margin-right: 20px; }
   .main-nav .mn-item:last-child {
     margin-right: 0; }
+  @media (max-width: 768px) {
+    .main-nav .mn-item {
+      margin-right: 0; } }
 
 .main-nav .mn-link {
   padding: 5px 16px;
   display: block;
   text-decoration: none; }
+  .main-nav .mn-link:hover {
+    background-color: #000000; }
+  @media (max-width: 768px) {
+    .main-nav .mn-link {
+      padding-left: 0;
+      padding-right: 0; } }
 
 .project-grid .pg-item {
   margin-bottom: 40px; }
@@ -104,10 +149,11 @@ h1 {
   height: 100%;
   display: block;
   border: 2px solid #000000; }
+  .project-grid .pg-link:hover img {
+    opacity: .65; }
 
 .project-grid img {
-  width: 100%;
-  height: auto; }
+  display: block; }
 
 .project-highlight {
   position: relative;
@@ -119,7 +165,6 @@ h1 {
     height: auto; }
 
 .project-info {
-  height: 400px;
   margin-top: 40px; }
   .project-info .pi-left {
     position: relative;
@@ -146,8 +191,7 @@ h1 {
   border-top: 3px solid #000000; }
 
 .about-section .as-picture {
-  height: 400px;
-  background-color: #cccccc; }
+  height-min: 100%; }
 
 .footer {
   height: 30px;

@@ -1,13 +1,13 @@
 <section class="container">
-  <div class="row project-info">
-    <div class="row">
-      <div class="col-md-8">
+  <div class="project-info">
+    <div class="pi-summary row no-margin">
+      <div class="col-xs-12 col-sm-8">
         <div class="pi-left">
           <h2 class="pi-header">{{ cms:page:project_info.project_title:string }}</h2>
           {{ cms:page:project_info.info_text:string }}
         </div>
       </div>
-      <div class="col-md-4 no-padding-right extra-padding-left">
+      <div class="col-xs-12 col-sm-4 no-padding-right extra-padding-left">
         <div class="pi-right">
         <h2 class="pi-header">Categories</h2>
           <ul>
@@ -18,7 +18,7 @@
         </div>
       </div>
     </div>
-    <div class="row pi-images">
+    <div class="pi-images row no-margin">
       <div class="pi-image pi-image-main col-sm-12">
         <picture>
           <source srcset="{{ cms:page:project_info.image_1_2x:string }}" media="(-webkit-min-device-pixel-ratio: 1.5)) ">

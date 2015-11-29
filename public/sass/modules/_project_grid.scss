@@ -8,9 +8,13 @@
     height: 100%;
     display: block;
     border: 2px solid $black;
+    &:hover {
+      img {
+        opacity: .65;
+      }
+    }
   }
   img {
-    width: 100%;
-    height: auto;
+    display: block;
   }
 }

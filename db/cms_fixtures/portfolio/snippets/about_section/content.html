@@ -1,36 +1,48 @@
 <section class="container">
   <div class="row about-section">    
-    <div class="as-picture as-picture-left col-xs-6"></div>
-    <div class="as-picture as-picture-right col-xs-6"></div>
+    <div class="as-picture as-picture-left col-xs-6">
+      <picture>
+        <source srcset="{{ cms:page:about_section.first_person_image_2x:string }}" media="(-webkit-min-device-pixel-ratio: 1.5)) ">
+        <source srcset="{{ cms:page:about_section.first_person_image_2x:string }}" media="(min-resolution: 144dpi) ">
+        <img srcset="{{ cms:page:about_section.first_person_image_1x:string }}" alt="…">          
+      </picture>     
+    </div>
+    <div class="as-picture as-picture-right col-xs-6">
+      <picture>
+        <source srcset="{{ cms:page:about_section.second_person_image_2x:string }}" media="(-webkit-min-device-pixel-ratio: 1.5)) ">
+        <source srcset="{{ cms:page:about_section.second_person_image_2x:string }}" media="(min-resolution: 144dpi) ">
+        <img srcset="{{ cms:page:about_section.second_person_image_1x:string }}" alt="…">          
+      </picture>      
+    </div>
     <div class="as-text-left col-md-6">
       <div class="as-text">
-        <h3 class="underline-bottom">Wade Fuller</h3>
-        <h3 class="underline-bottom">title</h3>
-        <p class="a-bio">bio here</p>
+        <h3 class="underline-bottom">{{ cms:page:about_section.first_person_name:string }}</h3>
+        <h3 class="underline-bottom">{{ cms:page:about_section.first_person_title:string }}</h3>
+        <p class="a-bio">{{ cms:page:about_section.first_person_bio:string }}</p>
         <h3 class="underline-top">experience</h3>
         <ul class="as-experience-list">
-          <li>job 1</li>
-          <li>job 2</li>
+          <li>{{ cms:page:about_section.first_person_job_01:string }}</li>
+          <li>{{ cms:page:about_section.first_person_job_02:string }}</li>
         </ul>
         <h3 class="underline-top">fun facts</h3>
         <ul class="as-extra-info">
-          <li>etc</li>
+          <li>{{ cms:page:about_section.first_person_fun_fact_01:string }}</li>
         </ul>
       </div>        
     </div>
     <div class="as-text-left col-md-6">
       <div class="as-text">
-        <h3 class="underline-bottom">Wade Fuller</h3>
-        <h3 class="underline-bottom">title</h3>
-        <p class="a-bio">bio here</p>
+        <h3 class="underline-bottom">{{ cms:page:about_section.second_person_name:string }}</h3>
+        <h3 class="underline-bottom">{{ cms:page:about_section.second_person_title:string }}</h3>
+        <p class="a-bio">{{ cms:page:about_section.second_person_bio:string }}</p>
         <h3 class="underline-top">experience</h3>
         <ul class="as-experience-list">
-          <li>job 1</li>
-          <li>job 2</li>
+          <li>{{ cms:page:about_section.second_person_job_01:string }}</li>
+          <li>{{ cms:page:about_section.second_person_job_02:string }}</li>
         </ul>
         <h3 class="underline-top">fun facts</h3>
         <ul class="as-extra-info">
-          <li>etc</li>
+          <li>{{ cms:page:about_section.second_person_fun_fact_01:string }}</li>
         </ul>
       </div>        
     </div>      
