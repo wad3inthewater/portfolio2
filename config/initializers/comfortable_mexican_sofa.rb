@@ -100,22 +100,22 @@ ComfortableMexicanSofa::AccessControl::AdminAuthentication.username = 'swade'
 ComfortableMexicanSofa::AccessControl::AdminAuthentication.password = '1337'
 
 # Uncomment this module and `config.admin_auth` above to use custom admin authentication
-# module ComfyAdminAuthentication
-#   def authenticate
-#     return true
-#   end
-# end
+module ComfyAdminAuthentication
+  def authenticate
+    return true
+  end
+end
 
 # Uncomment this module and `config.admin_authorization` above to use custom admin authorization
-# module ComfyAdminAuthorization
-#   def authorize
-#     return true
-#   end
-# end
+module ComfyAdminAuthorization
+  def authorize
+    return true
+  end
+end
 
 # Uncomment this module and `config.public_auth` above to use custom public authentication
-# module ComfyPublicAuthentication
-#   def authenticate
-#     return true
-#   end
-# end
+module ComfyPublicAuthentication
+  def authenticate
+    return true
+  end
+end
