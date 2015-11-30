@@ -1,28 +1,9 @@
-== README
+== Portfolio2
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+this is rails app setup to create a simple portfolio style site with the cms gem comfortable-mexican-sofa.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+whats needed:
+ rbenv
+ postresql
+ rails
+ npm
