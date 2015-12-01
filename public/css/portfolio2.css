@@ -80,9 +80,11 @@ img {
   .no-margin-top {
     margin-top: 0; }
 
-h3 {
-  margin-top: 10px;
+h2, h3 {
   text-transform: uppercase; }
+
+h3 {
+  margin-top: 10px; }
 
 p {
   margin: 20px 0; }
