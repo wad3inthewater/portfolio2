@@ -187,12 +187,13 @@ h1 {
     width: 100%;
     height: auto; }
 
-.about-section .as-text {
-  margin-top: 40px;
-  border-top: 3px solid #000000; }
-
-.about-section .as-picture {
-  height-min: 100%; }
+.about-section {
+  margin-bottom: 40px; }
+  .about-section .as-text {
+    margin-top: 40px;
+    border-top: 3px solid #000000; }
+  .about-section .as-picture {
+    height-min: 100%; }
 
 .footer {
   height: 30px;
