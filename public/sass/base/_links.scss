@@ -1,4 +1,7 @@
 a {
+  &:visited {
+    color: inherit;
+  }
   &:hover {
     background-color: #fff;
   }

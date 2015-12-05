@@ -111,6 +111,7 @@ ul {
   margin-bottom: 20px; }
 
 .label {
+  font-size: 18px;
   font-weight: 700; }
 
 .underline, .underline-bottom, .underline-top {
@@ -121,6 +122,9 @@ ul {
     border-bottom: 1px solid #000000; }
   .underline-top {
     border-top: 1px solid #000000; }
+
+a:visited {
+  color: inherit; }
 
 a:hover {
   background-color: #fff; }
@@ -173,8 +177,8 @@ h1 {
   height: 100%;
   display: block;
   border: 2px solid #000000;
-  text-decoration: none;
-  text-transform: capitalize; }
+  color: #ffffff;
+  text-decoration: none; }
   .project-grid .pg-link:hover img {
     opacity: .65; }
 
