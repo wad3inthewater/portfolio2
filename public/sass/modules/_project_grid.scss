@@ -9,6 +9,7 @@
     display: block;
     border: 2px solid $black;
     text-decoration: none;
+    text-transform: capitalize;
     &:hover {
       img {
         opacity: .65;

@@ -80,6 +80,10 @@ img {
   .no-margin-top {
     margin-top: 0; }
 
+/* GENERAL FONT STYLING (GROUPINGS) */
+div, body {
+  font-size: 14px; }
+
 h2,
 h3,
 .h2,
@@ -87,6 +91,16 @@ h3,
 .label {
   text-transform: uppercase; }
 
+h2,
+.h2 {
+  font-size: 21px; }
+
+h3,
+.h3 {
+  font-size: 18px;
+  letter-spacing: 1px; }
+
+/* DETAILED FONT STYlING  */
 h3 {
   margin-top: 10px; }
 
@@ -142,7 +156,8 @@ h1 {
 .main-nav .mn-link {
   padding: 5px 16px;
   display: block;
-  text-decoration: none; }
+  text-decoration: none;
+  text-transform: uppercase; }
   .main-nav .mn-link:hover {
     background-color: #000000; }
   @media (max-width: 768px) {
@@ -158,7 +173,8 @@ h1 {
   height: 100%;
   display: block;
   border: 2px solid #000000;
-  text-decoration: none; }
+  text-decoration: none;
+  text-transform: capitalize; }
   .project-grid .pg-link:hover img {
     opacity: .65; }
 
