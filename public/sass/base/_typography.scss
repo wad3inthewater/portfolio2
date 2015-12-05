@@ -1,4 +1,8 @@
-h2,h3 {
+h2,
+h3,
+.h2,
+.h3,
+.label {
   text-transform: uppercase;
 }
 h3 {
@@ -12,7 +16,9 @@ p {
 ul {
   margin-bottom: 20px;
 }
-
+.label {
+  font-weight: 700;
+}
 .underline {
   position: relative;
   width: 145px;

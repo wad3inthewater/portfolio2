@@ -80,7 +80,11 @@ img {
   .no-margin-top {
     margin-top: 0; }
 
-h2, h3 {
+h2,
+h3,
+.h2,
+.h3,
+.label {
   text-transform: uppercase; }
 
 h3 {
@@ -91,6 +95,9 @@ p {
 
 ul {
   margin-bottom: 20px; }
+
+.label {
+  font-weight: 700; }
 
 .underline, .underline-bottom, .underline-top {
   position: relative;
@@ -150,12 +157,19 @@ h1 {
   position: relative;
   height: 100%;
   display: block;
-  border: 2px solid #000000; }
+  border: 2px solid #000000;
+  text-decoration: none; }
   .project-grid .pg-link:hover img {
     opacity: .65; }
 
 .project-grid img {
   display: block; }
+
+.project-grid .pg-thumb-title {
+  height: 45px;
+  line-height: 45px;
+  background-color: #000000;
+  text-align: center; }
 
 .project-highlight {
   position: relative;
