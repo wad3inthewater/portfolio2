@@ -1,5 +1,12 @@
 <section class="container">
   <div class="project-info">
+    <div class="pi-image pi-image-main col-sm-12">
+      <picture>
+        <source srcset="{{ cms:page:project_info.header_image_2x:string }}" media="(-webkit-min-device-pixel-ratio: 1.5)) ">
+        <source srcset="{{ cms:page:project_info.header_image_2x:string }}" media="(min-resolution: 144dpi) ">
+        <img srcset="{{ cms:page:project_info.header_image_1:string }}" alt="…">
+      </picture>
+    </div>  
     <div class="pi-summary row no-margin">
       <div class="col-xs-12 col-sm-8">
         <div class="pi-left">
@@ -7,7 +14,7 @@
           {{ cms:page:project_info.info_text:string }}
         </div>
       </div>
-      <div class="col-xs-12 col-sm-4 no-padding-right extra-padding-left">
+      <div class="col-xs-12 col-sm-4 extra-padding-left">
         <div class="pi-right">
         <h2 class="pi-header">Categories</h2>
           <ul>
@@ -16,29 +23,6 @@
             <li>{{ cms:page:project_info.category_03:string }}</li>
           </ul>
         </div>
-      </div>
-    </div>
-    <div class="pi-images row no-margin">
-      <div class="pi-image pi-image-main col-sm-12">
-        <picture>
-          <source srcset="{{ cms:page:project_info.image_1_2x:string }}" media="(-webkit-min-device-pixel-ratio: 1.5)) ">
-          <source srcset="{{ cms:page:project_info.image_1_2x:string }}" media="(min-resolution: 144dpi) ">
-          <img srcset="{{ cms:page:project_info.image_1:string }}" alt="…">
-        </picture>
-      </div>
-      <div class="pi-image pi-image-support-left col-sm-12 col-md-6">
-        <picture>
-          <source srcset="{{ cms:page:project_info.image_2_2x:string }}" media="(-webkit-min-device-pixel-ratio: 1.5)) ">
-          <source srcset="{{ cms:page:project_info.image_2_2x:string }}" media="(min-resolution: 144dpi) ">
-          <img srcset="{{ cms:page:project_info.image_2:string }}" alt="…">
-        </picture>
-      </div>
-      <div class="pi-image pi-image-support-right col-sm-12 col-md-6">
-        <picture>
-          <source srcset="{{ cms:page:project_info.image_3_2x:string }}" media="(-webkit-min-device-pixel-ratio: 1.5)) ">
-          <source srcset="{{ cms:page:project_info.image_3_2x:string }}" media="(min-resolution: 144dpi) ">
-          <img srcset="{{ cms:page:project_info.image_3:string }}" alt="…">
-        </picture>
       </div>
     </div>
   </div>

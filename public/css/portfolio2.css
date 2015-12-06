@@ -207,6 +207,8 @@ h1 {
 
 .project-info {
   margin-top: 40px; }
+  .project-info .pi-summary {
+    margin-top: 28px; }
   .project-info .pi-left {
     position: relative;
     border-top: 3px solid #000000; }
