@@ -1,8 +1,13 @@
 .footer {
-  height: 30px;
-  color: $white;
-  background-color: $black;
+  height: 28px;
+  margin: 42px 0 14px 0;
+  color: $black;
   .f-content {
-    width: 100%;
+    border-top: solid 7px $black;
+    display: inline;
+    text-align: right;
+    padding-left: 28px;
+    padding-top: 21px;
+    line-height: 28px;
   }
 }

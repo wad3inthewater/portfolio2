@@ -1,9 +1,9 @@
 /* Basic Colors */
 .logo {
-  width: 220px;
-  height: 68px;
-  border: 3px solid #000000;
-  background-color: #cccccc; }
+  width: 90px;
+  height: 97px;
+  background-size: 100%;
+  background-image: url("/images/logo/overbore_logo.svg"); }
   @media (max-width: 768px) {
     .logo {
       margin: 0 auto; } }
@@ -81,7 +81,9 @@ img {
     margin-top: 0; }
 
 /* GENERAL FONT STYLING (GROUPINGS) */
-div, body {
+div,
+body,
+p {
   font-size: 14px; }
 
 h2,
@@ -111,8 +113,7 @@ ul {
   margin-bottom: 20px; }
 
 .label {
-  font-size: 18px;
-  font-weight: 700; }
+  font-size: 18px; }
 
 .underline, .underline-bottom, .underline-top {
   position: relative;
@@ -139,7 +140,7 @@ h1 {
   color: #ff0000; }
 
 .header {
-  height: 100px; }
+  height: 120px; }
   @media (max-width: 768px) {
     .header {
       height: 100%; } }
@@ -149,7 +150,6 @@ h1 {
     padding: 0; } }
 
 .main-nav .mn-item {
-  border: 1px solid #000000;
   margin-right: 20px; }
   .main-nav .mn-item:last-child {
     margin-right: 0; }
@@ -158,11 +158,16 @@ h1 {
       margin-right: 0; } }
 
 .main-nav .mn-link {
-  padding: 5px 16px;
+  padding: 7px 7px 7px 0;
+  width: 112px;
   display: block;
-  text-decoration: none;
-  text-transform: uppercase; }
+  border: 2px solid #000000;
+  border-top: 7px solid #000000;
+  line-height: 23px;
+  text-align: right;
+  text-decoration: none; }
   .main-nav .mn-link:hover {
+    color: #ffffff;
     background-color: #000000; }
   @media (max-width: 768px) {
     .main-nav .mn-link {
@@ -186,10 +191,11 @@ h1 {
   display: block; }
 
 .project-grid .pg-thumb-title {
-  height: 45px;
-  line-height: 45px;
+  padding-left: 14px;
+  height: 35px;
   background-color: #000000;
-  text-align: center; }
+  line-height: 40px;
+  text-align: left; }
 
 .project-highlight {
   position: relative;
@@ -230,8 +236,24 @@ h1 {
     height-min: 100%; }
 
 .footer {
-  height: 30px;
-  color: #ffffff;
-  background-color: #000000; }
+  height: 28px;
+  margin: 42px 0 14px 0;
+  color: #000000; }
   .footer .f-content {
-    width: 100%; }
+    border-top: solid 7px #000000;
+    display: inline;
+    text-align: right;
+    padding-left: 28px;
+    padding-top: 21px;
+    line-height: 28px; }
+
+.nivo-control {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin-left: 7px;
+  background-image: url("/images/icons/nivo_control.png");
+  background-position: 0 0;
+  font-size: 0; }
+  .nivo-control.active {
+    background-position: -11px 0; }

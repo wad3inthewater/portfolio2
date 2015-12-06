@@ -1,5 +1,7 @@
 /* GENERAL FONT STYLING (GROUPINGS) */
-div,body {
+div,
+body,
+p {
   font-size: 14px;
 }
 h2,
@@ -33,7 +35,6 @@ ul {
 }
 .label {
   font-size: 18px;
-  font-weight: 700;
 }
 .underline {
   position: relative;

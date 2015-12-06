@@ -1,5 +1,5 @@
 .header {
-  height: 100px;
+  height: 120px;
   @media (max-width: 768px) {
     height: 100%;
   }
@@ -9,7 +9,6 @@
     padding: 0;
   }
   .mn-item {
-    border: 1px solid $black;
     margin-right: 20px;
     &:last-child {
       margin-right: 0;
@@ -19,11 +18,16 @@
     }
   }
   .mn-link {
-    padding: 5px 16px;
+    padding: 7px 7px 7px 0;
+    width: 112px;
     display: block;
+    border: 2px solid $black;
+    border-top: 7px solid $black;
+    line-height: 23px;
+    text-align: right;
     text-decoration: none;
-    text-transform: uppercase;
     &:hover {
+      color: $white;
       background-color: $black;
     }
     @media (max-width: 768px) {
