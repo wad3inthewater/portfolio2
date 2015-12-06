@@ -249,6 +249,32 @@ h1 {
     padding-top: 21px;
     line-height: 28px; }
 
+.project-shots .ps-images {
+  position: relative; }
+
+.project-shots .ps-image {
+  position: relative; }
+
+.project-shots img {
+  position: relative;
+  width: 100%;
+  height: auto; }
+
+.project-quote {
+  margin: 42px 0;
+  padding: 28px 21px;
+  border: 2px solid #000000;
+  border-top: 7px solid #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b2301b; }
+  .project-quote .pq-text {
+    text-align: center;
+    font-size: 45px;
+    line-height: 52px;
+    color: #ffffff; }
+
 .nivo-control {
   display: inline-block;
   height: 12px;
