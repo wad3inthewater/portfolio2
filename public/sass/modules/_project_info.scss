@@ -1,32 +1,21 @@
 .project-info {
   margin-top: 40px;
   .pi-summary {
-    margin-top: 28px;
+    margin: 28px 0;
   }
   .pi-left {
     position: relative;
-    border-top: 3px solid $black;
+    border-top: 2px solid $black;
   }
   .pi-right {
-    border-top: 3px solid $black;
+    border-top: 2px solid $black;
   }
   .pi-header {
     position: relative;
     margin: 16px 0;
     width: 145px;
     line-height: 30px;
-    border-bottom: 1px solid $black;
-  }
-  .pi-images {
-    position: relative;
-  }
-  .pi-image{
-    position: relative;
-  }
-  img {
-    position: relative;
-    width: 100%;
-    height: auto;
+    border-bottom: 2px solid $black;
   }
   // .pi-image-main {
 

@@ -3,7 +3,8 @@
   width: 90px;
   height: 97px;
   background-size: 100%;
-  background-image: url("/images/logo/overbore_logo.svg"); }
+  background-image: url("/images/logo/overbore_logo.svg");
+  font-size: 0; }
   @media (max-width: 768px) {
     .logo {
       margin: 0 auto; } }
@@ -83,7 +84,8 @@ img {
 /* GENERAL FONT STYLING (GROUPINGS) */
 div,
 body,
-p {
+p,
+li {
   font-size: 14px; }
 
 h2,
@@ -207,7 +209,8 @@ h1 {
   min-height: 504px;
   position: relative;
   background-color: #cccccc;
-  margin: 30px 0; }
+  margin: 30px 0;
+  border: 2px solid #000000; }
   .project-highlight img {
     width: 100%;
     height: auto; }
@@ -215,26 +218,18 @@ h1 {
 .project-info {
   margin-top: 40px; }
   .project-info .pi-summary {
-    margin-top: 28px; }
+    margin: 28px 0; }
   .project-info .pi-left {
     position: relative;
-    border-top: 3px solid #000000; }
+    border-top: 2px solid #000000; }
   .project-info .pi-right {
-    border-top: 3px solid #000000; }
+    border-top: 2px solid #000000; }
   .project-info .pi-header {
     position: relative;
     margin: 16px 0;
     width: 145px;
     line-height: 30px;
-    border-bottom: 1px solid #000000; }
-  .project-info .pi-images {
-    position: relative; }
-  .project-info .pi-image {
-    position: relative; }
-  .project-info img {
-    position: relative;
-    width: 100%;
-    height: auto; }
+    border-bottom: 2px solid #000000; }
 
 .about-section {
   margin-bottom: 40px; }
@@ -260,7 +255,8 @@ h1 {
   position: relative; }
 
 .project-shots .ps-image {
-  position: relative; }
+  position: relative;
+  margin-bottom: 14px; }
 
 .project-shots img {
   position: relative;
