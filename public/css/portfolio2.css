@@ -277,6 +277,29 @@ h1 {
     line-height: 52px;
     color: #ffffff; }
 
+.thumbnail-nav .tn-item {
+  margin-bottom: 40px; }
+
+.thumbnail-nav .tn-link {
+  position: relative;
+  height: 100%;
+  display: block;
+  border: 2px solid #000000;
+  color: #ffffff;
+  text-decoration: none; }
+  .thumbnail-nav .tn-link:hover img {
+    opacity: .65; }
+
+.thumbnail-nav img {
+  display: block; }
+
+.thumbnail-nav .tn-thumb-title {
+  padding-left: 14px;
+  height: 35px;
+  background-color: #000000;
+  line-height: 40px;
+  text-align: left; }
+
 .nivo-control {
   display: inline-block;
   height: 12px;
