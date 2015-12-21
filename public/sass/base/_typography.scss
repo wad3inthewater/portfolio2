@@ -2,7 +2,8 @@
 div,
 body,
 p,
-li {
+li,
+span {
   font-size: 14px;
 }
 h2,
@@ -35,6 +36,7 @@ ul {
   margin-bottom: 20px;
 }
 .label {
+  font-weight: bold;
   font-size: 18px;
 }
 .underline {
@@ -49,4 +51,7 @@ ul {
     @extend .underline;
     border-top: 1px solid $black;
   }
+}
+.bold {
+  font-weight: bold;
 }

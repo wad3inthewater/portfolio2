@@ -85,7 +85,8 @@ img {
 div,
 body,
 p,
-li {
+li,
+span {
   font-size: 14px; }
 
 h2,
@@ -115,6 +116,7 @@ ul {
   margin-bottom: 20px; }
 
 .label {
+  font-weight: bold;
   font-size: 18px; }
 
 .underline, .underline-bottom, .underline-top {
@@ -125,6 +127,9 @@ ul {
     border-bottom: 1px solid #000000; }
   .underline-top {
     border-top: 1px solid #000000; }
+
+.bold {
+  font-weight: bold; }
 
 a:visited {
   color: inherit; }
@@ -200,8 +205,7 @@ h1 {
   display: block; }
 
 .project-grid .pg-thumb-title {
-  padding-left: 14px;
-  height: 35px;
+  padding: 14px 14px 0 14px;
   background-color: #000000;
   line-height: 40px;
   text-align: left; }
