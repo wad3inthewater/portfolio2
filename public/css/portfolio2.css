@@ -197,18 +197,34 @@ h1 {
   display: block;
   border: 2px solid #000000;
   color: #ffffff;
-  text-decoration: none; }
-  .project-grid .pg-link:hover img {
-    opacity: .65; }
+  text-decoration: none;
+  overflow: hidden; }
+  .project-grid .pg-link:hover {
+    border-color: #3366cc; }
+    .project-grid .pg-link:hover img {
+      opacity: .65; }
+    .project-grid .pg-link:hover .pg-thumb-title {
+      bottom: 0px;
+      -webkit-transition: bottom 0.65s;
+      transition: bottom 0.65s; }
 
 .project-grid img {
   display: block; }
 
 .project-grid .pg-thumb-title {
-  padding: 14px 14px 0 14px;
-  background-color: #000000;
-  line-height: 40px;
-  text-align: left; }
+  position: absolute;
+  bottom: -76px;
+  width: 100%;
+  background-color: #3366cc;
+  text-align: left;
+  -webkit-transition: bottom 0.65s;
+  transition: bottom 0.65s; }
+  .project-grid .pg-thumb-title p {
+    padding: 14px; }
+  .project-grid .pg-thumb-title span {
+    display: block;
+    margin-top: 10px;
+    font-weight: 100; }
 
 .project-highlight {
   min-height: 460px;

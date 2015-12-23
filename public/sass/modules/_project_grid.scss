@@ -6,12 +6,20 @@
     position: relative;
     height: 100%;
     display: block;
-    border: 2px solid $black;
+    border: $border-thin solid $black;
     color: $white;
     text-decoration: none;
+    overflow: hidden;
     &:hover {
+      border-color: $blue_highlight;
       img {
         opacity: .65;
+      }
+      .pg-thumb-title {
+        //display: block;
+        bottom: 0px;
+         -webkit-transition: bottom 0.65s;
+         transition: bottom 0.65s;
       }
     }
   }
@@ -19,9 +27,21 @@
     display: block;
   }
   .pg-thumb-title {
-    padding: 14px 14px 0 14px;
-    background-color: $black;
-    line-height: 40px;
+    //display: none;
+    position: absolute;
+    bottom: -76px;
+    width: 100%;
+    background-color: $blue_highlight;
     text-align: left;
+    -webkit-transition: bottom 0.65s;
+    transition: bottom 0.65s;
+    p {
+      padding: 14px;
+    }
+    span {
+      display: block;
+      margin-top: 10px;
+      font-weight: 100;
+    }
   }
 }
