@@ -1,7 +1,7 @@
-  var gulp     = require('gulp'),
-      sass     = require('gulp-sass'),
-      jshint   = require('gulp-jshint'),
-      scsslint = require('gulp-scss-lint');
+var gulp     = require('gulp'),
+    sass     = require('gulp-sass'),
+    jshint   = require('gulp-jshint'),
+    scsslint = require('gulp-scss-lint');
 
 
 gulp.task('jshint', function() {

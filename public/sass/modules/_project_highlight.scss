@@ -4,6 +4,9 @@
   background-color: $grey;
   margin-bottom: 28px;
   border: $border-thin solid $black;
+  @media (max-width: $breakpoint-medium) {
+  	min-height: 100%;
+	}
   img {
     width: 100%;
     height: auto;
