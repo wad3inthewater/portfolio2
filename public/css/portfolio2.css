@@ -3,8 +3,9 @@
   width: 90px;
   height: 97px;
   background-size: 100%;
-  background-image: url("/images/logo/overbore_logo.svg");
-  font-size: 0; }
+  background-image: url("/images/logo/overbore_logo.svg"); }
+  .logo span {
+    font-size: 0; }
   @media (max-width: 768px) {
     .logo {
       margin: 0 auto; } }
