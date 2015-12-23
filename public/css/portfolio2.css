@@ -170,7 +170,8 @@ h1 {
     margin-right: 0; }
   @media (max-width: 768px) {
     .main-nav .mn-item {
-      margin-right: 0; } }
+      margin-right: 0;
+      display: inline-block; } }
 
 .main-nav .mn-link {
   padding: 7px 7px 7px 0;
@@ -187,7 +188,9 @@ h1 {
   @media (max-width: 768px) {
     .main-nav .mn-link {
       padding-left: 0;
-      padding-right: 0; } }
+      padding-right: 0;
+      border: none;
+      width: 100%; } }
 
 .project-grid .pg-item {
   margin-bottom: 40px; }
@@ -205,9 +208,15 @@ h1 {
     .project-grid .pg-link:hover img {
       opacity: .65; }
     .project-grid .pg-link:hover .pg-thumb-title {
-      bottom: 0px;
+      bottom: 0;
       -webkit-transition: bottom 0.65s;
       transition: bottom 0.65s; }
+  @media (max-width: 768px) {
+    .project-grid .pg-link {
+      border-color: #3366cc; }
+      .project-grid .pg-link .pg-thumb-title {
+        display: block;
+        bottom: 0; } }
 
 .project-grid img {
   display: block; }

@@ -16,6 +16,7 @@
     }
     @media (max-width: 768px) {
       margin-right: 0;
+      display: inline-block;
     }
   }
   .mn-link {
@@ -34,6 +35,8 @@
     @media (max-width: 768px) {
      padding-left: 0;
      padding-right: 0;
+     border: none;
+     width: 100%;
     }
   }
 }

@@ -17,9 +17,16 @@
       }
       .pg-thumb-title {
         //display: block;
-        bottom: 0px;
+        bottom: 0;
          -webkit-transition: bottom 0.65s;
          transition: bottom 0.65s;
+      }
+    }
+    @media (max-width: 768px) {
+      border-color: $blue_highlight;
+      .pg-thumb-title {
+        display: block;
+        bottom: 0;
       }
     }
   }
