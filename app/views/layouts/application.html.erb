@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Portfolio2</title>
   <%= stylesheet_link_tag '/css/reset' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -11,6 +10,8 @@
   <%= stylesheet_link_tag '/css/portfolio2' %>
   <script src="https://use.typekit.net/bev8ita.js"></script>
   <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio2</title>
 </head>
 <body class="portfolio-site">
 <%= yield %>
