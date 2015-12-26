@@ -245,8 +245,7 @@ h1 {
 .project-highlight {
   min-height: 460px;
   position: relative;
-  margin-bottom: 28px;
-  border: 2px solid #000000; }
+  margin-bottom: 28px; }
   @media (max-width: 767px) {
     .project-highlight {
       min-height: 100%; } }
