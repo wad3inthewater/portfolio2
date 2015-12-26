@@ -6,7 +6,7 @@
   background-image: url("/images/logo/overbore_logo.svg"); }
   .logo span {
     font-size: 0; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .logo {
       margin: 0 auto; } }
 
@@ -34,7 +34,7 @@ img {
 
 .list-horizontal .list-item {
   display: inline-block; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .list-horizontal .list-item {
       display: block; } }
 
@@ -49,7 +49,7 @@ img {
 
 .extra-padding {
   padding: 40px; }
-  @media (min-width: 768px) {
+  @media (min-width: 767px) {
     .extra-padding-left {
       padding-left: 40px; }
     .extra-padding-right {
@@ -61,7 +61,7 @@ img {
 
 .no-padding {
   padding: 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 767px) {
     .no-padding-left {
       padding-left: 0; }
     .no-padding-right {
@@ -156,9 +156,14 @@ h1 {
 .header {
   height: 120px;
   margin-bottom: 28px; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .header {
       height: 100%; } }
+
+@media (max-width: 767px) {
+  .main-nav {
+    margin-top: 14px;
+    text-align: center; } }
 
 @media (max-width: 480px) {
   .main-nav {
@@ -168,9 +173,10 @@ h1 {
   margin-right: 20px; }
   .main-nav .mn-item:last-child {
     margin-right: 0; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .main-nav .mn-item {
       margin-right: 0;
+      padding: 0 14px;
       display: inline-block; } }
 
 .main-nav .mn-link {
@@ -185,7 +191,7 @@ h1 {
   .main-nav .mn-link:hover {
     color: #ffffff;
     background-color: #000000; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .main-nav .mn-link {
       padding-left: 0;
       padding-right: 0;
@@ -211,7 +217,7 @@ h1 {
       bottom: 0;
       -webkit-transition: bottom 0.65s;
       transition: bottom 0.65s; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .project-grid .pg-link {
       border-color: #3366cc; }
       .project-grid .pg-link .pg-thumb-title {
@@ -239,7 +245,11 @@ h1 {
 .project-highlight {
   min-height: 460px;
   position: relative;
-  margin-bottom: 28px; }
+  margin-bottom: 28px;
+  border: 2px solid #000000; }
+  @media (max-width: 767px) {
+    .project-highlight {
+      min-height: 100%; } }
   .project-highlight .nivoSlider {
     border: 2px solid #000000; }
   .project-highlight img {

@@ -22,7 +22,7 @@
          transition: bottom 0.65s;
       }
     }
-    @media (max-width: 768px) {
+    @media (max-width: $breakpoint-medium) {
       border-color: $blue_highlight;
       .pg-thumb-title {
         display: block;

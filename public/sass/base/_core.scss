@@ -24,7 +24,7 @@ img {
 .list-horizontal {
   .list-item {
     display: inline-block;
-    @media (max-width: 768px) {
+    @media (max-width: $breakpoint-medium) {
       display: block;
     }
   }
@@ -43,7 +43,7 @@ img {
 }
 .extra-padding {
   padding: 40px;
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-medium) {
     &-left {
       padding-left: $padding;
     }
@@ -60,7 +60,7 @@ img {
 }
 .no-padding {
   padding: 0;
-  @media (min-width: 768px) {
+  @media (min-width: $breakpoint-medium) {
     &-left {
       padding-left: 0;
     }
