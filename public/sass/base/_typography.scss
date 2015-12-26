@@ -51,6 +51,9 @@ ul {
     @extend .underline;
     border-top: 1px solid $black;
   }
+  @media (max-width: $breakpoint-small) {
+    width: 100%;
+  }
 }
 .bold {
   font-weight: bold;
