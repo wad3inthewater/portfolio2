@@ -1,9 +1,10 @@
 .project-highlight {
   min-height: 460px;
   position: relative;
-  background-color: $grey;
   margin-bottom: 28px;
-  border: $border-thin solid $black;
+  .nivoSlider {
+    border: $border-thin solid $black;
+  }
   img {
     width: 100%;
     height: auto;

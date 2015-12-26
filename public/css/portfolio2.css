@@ -239,9 +239,9 @@ h1 {
 .project-highlight {
   min-height: 460px;
   position: relative;
-  background-color: #cccccc;
-  margin-bottom: 28px;
-  border: 2px solid #000000; }
+  margin-bottom: 28px; }
+  .project-highlight .nivoSlider {
+    border: 2px solid #000000; }
   .project-highlight img {
     width: 100%;
     height: auto; }
