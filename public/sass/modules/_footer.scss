@@ -9,5 +9,8 @@
     padding-left: 28px;
     padding-top: 21px;
     line-height: 28px;
+    @media (max-width: $breakpoint-medium) {
+      padding: 21px 28px;
+    }
   }
 }
