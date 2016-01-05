@@ -84,7 +84,7 @@ img {
 
 .divider {
   border-top: 2px #000000 solid;
-  padding-top: 14px; }
+  padding-top: 21px; }
 
 /* GENERAL FONT STYLING (GROUPINGS) */
 div,
@@ -112,6 +112,10 @@ h2,
 .h2 {
   font-size: 21px; }
 
+.h2-lined {
+  padding-bottom: 14px;
+  margin-bottom: 21px; }
+
 h3,
 .h3 {
   font-size: 18px;
@@ -119,7 +123,7 @@ h3,
 
 /* DETAILED FONT STYlING  */
 h3 {
-  margin-top: 10px; }
+  margin-top: 14px; }
 
 p {
   margin: 20px 0; }
@@ -366,13 +370,14 @@ a:hover {
 
 .services-grid {
   padding-top: 14px; }
-  .services-grid .sg-h2 {
-    padding-bottom: 7px;
-    margin-bottom: 14px; }
   .services-grid .sg-header {
     margin-bottom: 7px; }
-  .services-grid .sg-image {
-    background-color: #cccccc; }
+
+.operating-principles .op-section {
+  margin-top: 7px; }
+
+.operating-principles .op-image {
+  margin-top: 14px; }
 
 .nivo-control {
   display: inline-block;
