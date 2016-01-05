@@ -90,3 +90,7 @@ img {
     margin-top: 0;
   }
 }
+.divider {
+  border-top: $border-thin $black solid;
+  padding-top: 14px;
+}

@@ -51,11 +51,11 @@ ul {
   position: relative;
   &-bottom {
     @extend .underline;
-    border-bottom: 1px solid $black;
+    border-bottom: $border-thin solid $black;
   }
   &-top {
     @extend .underline;
-    border-top: 1px solid $black;
+    border-top: $border-thin solid $black;
   }
   @media (max-width: $breakpoint-small) {
     width: 100%;

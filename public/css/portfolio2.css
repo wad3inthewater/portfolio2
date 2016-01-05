@@ -82,6 +82,10 @@ img {
   .no-margin-top {
     margin-top: 0; }
 
+.divider {
+  border-top: 2px #000000 solid;
+  padding-top: 14px; }
+
 /* GENERAL FONT STYLING (GROUPINGS) */
 div,
 body,
@@ -130,9 +134,9 @@ ul {
 .underline, .underline-bottom, .underline-top {
   position: relative; }
   .underline-bottom {
-    border-bottom: 1px solid #000000; }
+    border-bottom: 2px solid #000000; }
   .underline-top {
-    border-top: 1px solid #000000; }
+    border-top: 2px solid #000000; }
   @media (max-width: 480px) {
     .underline, .underline-bottom, .underline-top {
       width: 100%; } }
@@ -360,15 +364,15 @@ a:hover {
   .text-left-image-right .tlir-image {
     background-color: #000000; }
 
-.services-grid .sg-h2 {
-  padding-bottom: 7px;
-  margin-bottom: 7px; }
-
-.services-grid .sg-header {
-  margin-bottom: 7px; }
-
-.services-grid .sg-image {
-  background-color: #cccccc; }
+.services-grid {
+  padding-top: 14px; }
+  .services-grid .sg-h2 {
+    padding-bottom: 7px;
+    margin-bottom: 14px; }
+  .services-grid .sg-header {
+    margin-bottom: 7px; }
+  .services-grid .sg-image {
+    background-color: #cccccc; }
 
 .nivo-control {
   display: inline-block;
