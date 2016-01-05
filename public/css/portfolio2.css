@@ -360,6 +360,10 @@ a:hover {
   .text-left-image-right .tlir-image {
     background-color: #000000; }
 
+.services-grid .sg-h2 {
+  padding-bottom: 7px;
+  margin-bottom: 7px; }
+
 .services-grid .sg-header {
   margin-bottom: 7px; }
 
