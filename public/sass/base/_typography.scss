@@ -13,6 +13,13 @@ h3,
 .label {
   text-transform: uppercase;
 }
+.h1-xl {
+  font-size: 60px;
+  line-height: 48px;
+  text-transform: uppercase;
+  border-bottom: $border-thin $black solid;
+  padding-bottom: 21px;
+}
 h2,
 .h2 {
   font-size: 21px;
@@ -39,10 +46,9 @@ ul {
   font-weight: bold;
   font-size: 18px;
 }
+
 .underline {
   position: relative;
-  width: 145px;
-  line-height: 30px;
   &-bottom {
     @extend .underline;
     border-bottom: 1px solid $black;

@@ -1,0 +1,11 @@
+.text-left-image-right {
+  height: 100%;
+  .tlir-text {
+    padding: 21px 0;
+    border-top: $border-thin $black solid;
+    border-bottom: $border-thin $black solid;
+  }
+  .tlir-image {
+    background-color: $black;
+  }
+}

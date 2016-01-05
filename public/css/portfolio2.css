@@ -97,6 +97,13 @@ h3,
 .label {
   text-transform: uppercase; }
 
+.h1-xl {
+  font-size: 60px;
+  line-height: 48px;
+  text-transform: uppercase;
+  border-bottom: 2px #000000 solid;
+  padding-bottom: 21px; }
+
 h2,
 .h2 {
   font-size: 21px; }
@@ -121,9 +128,7 @@ ul {
   font-size: 18px; }
 
 .underline, .underline-bottom, .underline-top {
-  position: relative;
-  width: 145px;
-  line-height: 30px; }
+  position: relative; }
   .underline-bottom {
     border-bottom: 1px solid #000000; }
   .underline-top {
@@ -151,10 +156,6 @@ a:hover {
 
 .bg-color-blue {
   background-color: #000000; }
-
-h1 {
-  font-size: 25px;
-  color: #ff0000; }
 
 .header {
   height: 120px;
@@ -277,6 +278,9 @@ h1 {
 
 .about-section {
   margin-bottom: 40px; }
+  .about-section .as-header {
+    width: 145px;
+    line-height: 30px; }
   .about-section .as-text {
     margin-top: 40px;
     border-top: 3px solid #000000; }
@@ -346,6 +350,21 @@ h1 {
   background-color: #000000;
   line-height: 40px;
   text-align: left; }
+
+.text-left-image-right {
+  height: 100%; }
+  .text-left-image-right .tlir-text {
+    padding: 21px 0;
+    border-top: 2px #000000 solid;
+    border-bottom: 2px #000000 solid; }
+  .text-left-image-right .tlir-image {
+    background-color: #000000; }
+
+.services-grid .sg-header {
+  margin-bottom: 7px; }
+
+.services-grid .sg-image {
+  background-color: #cccccc; }
 
 .nivo-control {
   display: inline-block;
