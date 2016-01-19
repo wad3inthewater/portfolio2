@@ -1,15 +1,16 @@
 .project-quote {
   margin: 42px 0;
-  padding: 28px 21px;
-  border: $border-thin solid $black;
-  border-top: $border-thick solid $black;
   display: flex;
   justify-content: center;
   align-items: center;
   .pq-text {
+    padding-top: 28px;
+    padding-bottom: 28px;
     text-align: center;
     font-size: 45px;
     line-height: 52px;
     color: $white;
+    border: $border-thin solid $black;
+    border-top: $border-thick solid $black;
   }
 }

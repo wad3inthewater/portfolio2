@@ -327,17 +327,18 @@ a:hover {
 
 .project-quote {
   margin: 42px 0;
-  padding: 28px 21px;
-  border: 2px solid #000000;
-  border-top: 7px solid #000000;
   display: flex;
   justify-content: center;
   align-items: center; }
   .project-quote .pq-text {
+    padding-top: 28px;
+    padding-bottom: 28px;
     text-align: center;
     font-size: 45px;
     line-height: 52px;
-    color: #ffffff; }
+    color: #ffffff;
+    border: 2px solid #000000;
+    border-top: 7px solid #000000; }
 
 .thumbnail-nav .tn-item {
   margin-bottom: 40px; }
