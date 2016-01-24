@@ -7,8 +7,8 @@ a {
   }
 }
 .link-fade-bg {
-  transition: color 0.55s, background-color 0.55s;
+  transition: color 0.55s, background-color 0.55s, border-color 0.55s;
   &:hover {
-    transition: color 0.65s, background-color 0.75s;
+    transition: color 0.65s, background-color 0.75s, border-color 0.55s;
   }
 }
