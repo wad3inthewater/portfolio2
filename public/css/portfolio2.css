@@ -375,7 +375,8 @@ a:hover {
   margin-bottom: 21px;
   padding-top: 14px; }
   .services-grid .sg-header {
-    margin-bottom: 7px; }
+    text-align: center;
+    margin-bottom: 28px; }
 
 .operating-principles .op-section {
   margin-top: 7px; }
